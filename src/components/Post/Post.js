@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router';
 
 const Post = (props) => {
-    const {userId,id,title,body} = props.post;
+    const {id,title,body} = props.post;
     const history = useHistory();
     const showComment = (id) => {
         const url = `/posts/${id}`;
